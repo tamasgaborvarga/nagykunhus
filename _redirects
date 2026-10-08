@@ -1,0 +1,25 @@
+# Régi nagykunhus.hu útvonalak → új oldalak. Első egyezés nyer.
+# A gyökér: html_handling = "none" mellett az index.html-t nem keresi magától.
+/index.php            /                        301
+/index2.php           /bemutatkozas.html       301
+/index3.php           /termekek.html           301
+/index4.php           /megrendeles.html        301
+/index5.php           /kapcsolat.html          301
+/index6.php           /dokumentumok.html       301
+/index7.php           /galeria.html            301
+/index7.1.php         /galeria.html#uzem       301
+/index7.2.php         /galeria.html#videok     301
+/allas                /allasaink.html          301
+/allas/               /allasaink.html          301
+/allas/*              /allasaink.html          301
+/products             /termekek.html           301
+/products/            /termekek.html           301
+/products/index.php   /termekek.html           301
+/palyazat.htm         /palyazatok.html#hypoallergen        301
+/palyazat2.htm        /palyazatok.html#ciborum-vitae       301
+/palyazat3.htm        /palyazatok.html#energetika          301
+/palyazat4.htm        /palyazatok.html#komplex-beruhazas   301
+/picture/dokumentumaink/2018-5.pdf           /assets/dok/2018-5.pdf           301
+/picture/dokumentumaink/energetika.pdf       /assets/dok/energetika.pdf       301
+/picture/dokumentumaink/nav.pdf              /assets/dok/nav.pdf              301
+/picture/dokumentumaink/felir-nyilatkozat.jpg /assets/dok/felir-nyilatkozat.jpg 301

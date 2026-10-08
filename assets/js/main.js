@@ -289,3 +289,17 @@
     doboz.appendChild(keret);
   });
 })();
+
+/* ------------------------------------------ Horgony → lenyíló (Állásaink)
+   Ha egy hivatkozás egy <details> elemre mutat (pl. #ejszakai-raktarvezeto),
+   nyissa is ki — betöltéskor és kattintáskor egyaránt. */
+(function () {
+  'use strict';
+  function nyit() {
+    if (!location.hash) return;
+    var cel = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (cel && cel.tagName === 'DETAILS') cel.open = true;
+  }
+  nyit();
+  window.addEventListener('hashchange', nyit);
+})();
