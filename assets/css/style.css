@@ -1575,12 +1575,6 @@ a.kartya:hover { box-shadow: var(--arnyek-2); transform: translateY(-3px); }
 .lablec__dij { margin-top: var(--sp-5); display: flex; align-items: center; gap: var(--sp-3); }
 .lablec__dij img { width: 64px; }
 .lablec__dij span { font-size: .8125rem; }
-.lablec__szo {
-  margin: 0 0 -.18em; user-select: none;
-  font-family: var(--f-cim); font-weight: 500;
-  font-size: clamp(3.5rem, 13.5vw, 13rem); line-height: .9; letter-spacing: -.045em;
-  color: rgba(248, 245, 240, .06); white-space: nowrap;
-}
 .lablec__alj {
   border-top: 1px solid var(--vil-vonal);
   padding-block: var(--sp-4) var(--sp-5);
