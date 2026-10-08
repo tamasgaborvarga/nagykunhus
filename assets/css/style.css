@@ -57,9 +57,7 @@
      8–60): nagy méretben magától a finomabb „Display” rajzolatra vált — ez adja
      az editorial címeket, külön display-betű letöltése nélkül. */
   --f-cim: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  /* 2026-10-08 (megbízói döntés): az egész oldal a logó betűjével, a Source Serif 4-gyel
-     szed — egy betűcsalád, egységes hang. A hierarchiát súly, méret és optikai méret adja. */
-  --f-szoveg: var(--f-cim);
+  --f-szoveg: "IBM Plex Sans", "Segoe UI", "Noto Sans", Arial, sans-serif;
 
   --fs-mega: clamp(2.6rem, 1.45rem + 5vw, 5.75rem);   /* heró */
   --fs-1:    clamp(2.15rem, 1.45rem + 3vw, 4rem);     /* szekciócím, oldalcím */
@@ -119,8 +117,8 @@ body {
   background: var(--bg);
   color: var(--szoveg);
   font-family: var(--f-szoveg);
-  font-size: 1.0625rem;   /* antikva törzs: egy fokkal nagyobb, mint a groteszk volt */
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.65;
   font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -1780,3 +1778,14 @@ a.kartya:hover { box-shadow: var(--arnyek-2); transform: translateY(-3px); }
   .fo-nav a { font-size: .875rem; padding-inline: .45rem; }
   .fejlec__tartalom { gap: var(--sp-3); }
 }
+
+/* 37. Főcímek a logó vágásával (2026-10-08, megbízói döntés): a fejléc
+   „Nagykun-Hús” felirata Source Serif 4, 600-as súly — a nagy címek ugyanezt kapják,
+   hogy a márkanév és a címsorok egy hangon szóljanak. A kisebb szövegek Plex Sans. */
+h1, h2, .cim-nagy, .hero__cim, .oldalfej h1, .termeklap__info h1,
+.keresopanel__cim, .kereso__felirat, .lablec__szlogen, .zaro-cta__tel, .nagy-elerhetoseg a {
+  font-weight: 600;
+}
+.hero__cim { letter-spacing: -.03em; }
+.cim-nagy, h1 { letter-spacing: -.025em; }
+.hero__cim span { font-weight: 500; }
