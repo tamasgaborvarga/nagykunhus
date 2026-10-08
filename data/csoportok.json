@@ -1,0 +1,109 @@
+{
+  "megjegyzes": "A cikkszám első két jegye szerinti csoportosítás. A forrástábla NEM közöl kategórianevet — az alábbi nevek a mi saját, leíró rendezésünk a tényleges terméknevek alapján; a főoldali lista ezt ki is írja. Lásd FORRASAUDIT.md 4. pont.",
+  "savok": [
+    {
+      "id": "keszitmeny",
+      "cim": "Húskészítmények"
+    },
+    {
+      "id": "friss",
+      "cim": "Friss hús és alapanyag"
+    },
+    {
+      "id": "fagyasztott",
+      "cim": "Fagyasztott"
+    }
+  ],
+  "csoportok": [
+    {
+      "elotag": "01",
+      "cim": "Párizsi és virsli",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "02",
+      "cim": "Felvágottak és sonkák",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "03",
+      "cim": "Kolbászok, grill- és főzőkolbászok",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "04",
+      "cim": "Hurka, májas, disznósajt",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "05",
+      "cim": "Szalámik és vastag kolbászok",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "06",
+      "cim": "Szeletelt készítmények",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "08",
+      "cim": "Szója- és gluténmentes készítmények",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "09",
+      "cim": "Tepertő, pörc, sertészsír",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "10",
+      "cim": "Füstölt és fűszerezett szalonnák",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "11",
+      "cim": "Füstölt és pácolt húsok",
+      "sav": "keszitmeny"
+    },
+    {
+      "elotag": "12",
+      "cim": "Nyers szalonna, háj, toka",
+      "sav": "friss"
+    },
+    {
+      "elotag": "13",
+      "cim": "Belsőségek és bél",
+      "sav": "friss"
+    },
+    {
+      "elotag": "14",
+      "cim": "Sertés — bontott és darabolt",
+      "sav": "friss"
+    },
+    {
+      "elotag": "15",
+      "cim": "Marha és borjú",
+      "sav": "friss"
+    },
+    {
+      "elotag": "16",
+      "cim": "Birka",
+      "sav": "friss"
+    },
+    {
+      "elotag": "18",
+      "cim": "Fagyasztott sertés",
+      "sav": "fagyasztott"
+    },
+    {
+      "elotag": "19",
+      "cim": "Fagyasztott marha",
+      "sav": "fagyasztott"
+    },
+    {
+      "elotag": "21",
+      "cim": "Fagyasztott birka",
+      "sav": "fagyasztott"
+    }
+  ]
+}
