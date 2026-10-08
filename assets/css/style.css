@@ -57,7 +57,9 @@
      8–60): nagy méretben magától a finomabb „Display” rajzolatra vált — ez adja
      az editorial címeket, külön display-betű letöltése nélkül. */
   --f-cim: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --f-szoveg: "IBM Plex Sans", "Segoe UI", "Noto Sans", Arial, sans-serif;
+  /* 2026-10-08 (megbízói döntés): az egész oldal a logó betűjével, a Source Serif 4-gyel
+     szed — egy betűcsalád, egységes hang. A hierarchiát súly, méret és optikai méret adja. */
+  --f-szoveg: var(--f-cim);
 
   --fs-mega: clamp(2.6rem, 1.45rem + 5vw, 5.75rem);   /* heró */
   --fs-1:    clamp(2.15rem, 1.45rem + 3vw, 4rem);     /* szekciócím, oldalcím */
@@ -117,8 +119,8 @@ body {
   background: var(--bg);
   color: var(--szoveg);
   font-family: var(--f-szoveg);
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 1.0625rem;   /* antikva törzs: egy fokkal nagyobb, mint a groteszk volt */
+  line-height: 1.6;
   font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -1770,3 +1772,11 @@ a.kartya:hover { box-shadow: var(--arnyek-2); transform: translateY(-3px); }
 .lablec__szlogen { font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem); }
 .lablec__alszlogen { margin: var(--sp-3) 0 0; color: var(--vil-2); }
 .lablec__alszlogen a { color: var(--vil-1); }
+
+/* 36. Antikva menü a szűk asztali sávban (1024–1279 px): kisebb betű és köz,
+   hogy a hat menüpont + kereső kényelmesen elférjen. */
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .fo-nav ul { gap: 0; }
+  .fo-nav a { font-size: .875rem; padding-inline: .45rem; }
+  .fejlec__tartalom { gap: var(--sp-3); }
+}
